@@ -1,217 +1,230 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de Vida - Nicolas Bolivar</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
-    <div class="cv-container">
-        <header>
-            <div class="vfotoPerfil">
-                <img src="./foto.jpg" alt="Foto de Perfil">
-            </div>
-            <div class="sdatosPersonales">
-                <h1>Nicolas Felipe Bolivar</h1>
-                <h2>Ingeniero de Software</h2>
-                <p>Email: nicopipebolivar@gmail.com</p>
-                <p>Teléfono: +57 322 2539637</p>
-                <p>Dirección: Calle 60 sur #83a-11</p>
-            </div>
-        </header>
-        <main>
-            <section class="summary">
-                <h3>Resumen</h3>
-                <p class="justify-text">Estudiante de Ingeniería de Sistemas con un fuerte
-                    interés en el desarrollo de soluciones tecnológicas
-                    innovadoras. Apasionado del hardware y con especial
-                    interés en el campo de la inteligencia artificial (IA). Poseo
-                    habilidades analíticas y de resolución de problemas, así
-                    como una sólida base en programación y desarrollo de
-                    software. Orientado al trabajo en equipo, con capacidad
-                    para aprender rápidamente y adaptarme a entornos
-                    cambiantes.</p>
-            </section>
-            <div class="accordion" id="accordionExample">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hoja de Vida - Nicolas Bolivar</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="buttons-right">
+            <a class="btn-linkedin" href="https://www.linkedin.com/in/nicolas-bolivar-a65863344/" target="_blank">
+                <i class="bi bi-linkedin fs-3 text-white"></i>
+            </a>
+            <a class="btn-whatsapp" href="https://wa.me/573222539637?text=Hola%20Nicolas%2C%20estuvimos%20viendo%20tu%20hoja%20de%20vida%20y%20nos%20interesa%20contactarnos%20contigo%20pues%20tienes%20el%20perfil%20de%20lo%20que%20estamos%20buscando" target="_blank">
+                <i class="bi bi-whatsapp fs-3 text-white"></i>
+            </a>
+            <button id="darkModeToggle" class="btn btn-dark fs-3"><i class="bi bi-moon"></i></button>
+        </div>
+        <div class="cv-container">
+            <header>
+                <div class="vfotoPerfil">
+                    <img src="./foto.jpg" alt="Foto de Perfil">
+                </div>
+                <div class="sdatosPersonales">
+                    <h1>Nicolas Felipe Bolivar</h1>
+                    <h2>Ingeniero de Software</h2>
+                    <p>Email: nicopipebolivar@gmail.com</p>
+                    <p>Teléfono: +57 322 2539637</p>
+                    <p>Dirección: Calle 60 sur #83a-11</p>
+                </div>
+            </header>
+            <main>
+                <section class="summary">
+                    <h3 class="resumen-title">Resumen</h3>
+                    <p class="justify-text">Estudiante de Ingeniería de Sistemas con un fuerte
+                        interés en el desarrollo de soluciones tecnológicas
+                        innovadoras. Apasionado del hardware y con especial
+                        interés en el campo de la inteligencia artificial (IA). Poseo
+                        habilidades analíticas y de resolución de problemas, así
+                        como una sólida base en programación y desarrollo de
+                        software. Orientado al trabajo en equipo, con capacidad
+                        para aprender rápidamente y adaptarme a entornos
+                        cambiantes.</p>
+                </section>
+                <div class="accordion" id="accordionExample">
 
-                <!-- Experiencia Laboral -->
-                <section class="accordion-item">
-                    <h3 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Experiencia Laboral
-                        </button>
-                    </h3>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="sexpLaboral">
-                                <h4>Desarrollador Junior</h4>
-                                <p>Entelgy SAS - Mayo 2024 - Noviembre 2024</p>
-                                <p>
-                                    <strong>Responsabilidades y logros:</strong>
-                                </p>
+                    <!-- Experiencia Laboral -->
+                    <section class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Experiencia Laboral
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="sexpLaboral">
+                                    <h4>Desarrollador Junior</h4>
+                                    <p>Entelgy SAS - Mayo 2024 - Noviembre 2024</p>
+                                    <p>
+                                        <strong>Responsabilidades y logros:</strong>
+                                    </p>
+                                    <ul>
+                                        <li>Diseñé y desarrollé una aplicación de aprendizaje estructurado desde cero, trabajando en colaboración con un compañero de la universidad.</li>
+                                        <li>La aplicación estaba destinada a nuevos desarrolladores, facilitando su incorporación y formación dentro de la empresa.</li>
+                                        <li>Participé en el desarrollo de formularios con campos específicos para una aplicación de facturación, asegurando precisión y funcionalidad en las entradas de datos.</li>
+                                        <li>Documenté los endpoints directamente en el código, siguiendo estándares para facilitar la comprensión y mantenimiento del proyecto.</li>
+                                    </ul>
+                                </div>
+                                <!-- Repite esta estructura para cada trabajo -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Formación Académica -->
+                    <section class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                Formación Académica
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="seducacion">
+                                    <p>Fundación de Educación Superior Nueva América - Bogotá D.C</p>
+                                    <p>Tecnico de Ingeniería de Sistemas</p>
+                                    <p>Febrero 2023 - Agosto 2024</p>
+                                </div>
+                                <br>
+                                <div class="seducacion">
+                                    <p>Fundación de Educación Superior Nueva América - Bogotá D.C</p>
+                                    <p>Tecnologo de Ingeniería de Sistemas</p>
+                                    <p>Septiembre 2024 - Actualidad</p>
+                                </div>
+                                <br>
+                                <!-- Repite esta estructura para cada educación -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Formación Complementaria -->
+                    <section class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Formación Complementaria
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="seducacion">
+                                    <p>Programa de Formación Básica en Lenguaje de Programación Python (Bogotá)</p>
+                                    <p>Institución: CoderDojo</p>
+                                    <p>Duración: 12 horas</p>
+                                    <br><br>
+                                    <p>Curso de Dispositivos de Red y Configuración Inicial (Bogotá)</p>
+                                    <p>Institución: Cisco</p>
+                                    <p>Duración: 48 horas</p>
+                                    <br><br>
+                                    <p>Curso en AWS (Amazon Web Services)</p>
+                                    <p>Institución: Amazon Web Services</p>
+                                    <p>Duración: 40 horas</p>
+                                    <br><br>
+                                    <p>Curso Fundamentos de Python</p>
+                                    <p>Institución: Cisco</p>
+                                    <p>Duración: 14 horas</p>
+                                    <br><br>
+                                    <p>Curso Inteligencia Artificial para Negocios (Bogotá)</p>
+                                    <p>Institución: MENNTUN GROUP SAS</p>
+                                    <p>Duración: 25 horas</p>
+                                    <p>Fecha: Del 15 de junio de 2024 al 27 de julio de 2024</p>
+                                </div>
+                                <!-- Repite esta estructura para cada educación -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Habilidades -->
+                    <section class="accordion-item">
+                        <h3 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                Habilidades Fuertes
+                            </button>
+                        </h3>
+                        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
                                 <ul>
-                                    <li>Diseñé y desarrollé una aplicación de aprendizaje estructurado desde cero, trabajando en colaboración con un compañero de la universidad.</li>
-                                    <li>La aplicación estaba destinada a nuevos desarrolladores, facilitando su incorporación y formación dentro de la empresa.</li>
-                                    <li>Participé en el desarrollo de formularios con campos específicos para una aplicación de facturación, asegurando precisión y funcionalidad en las entradas de datos.</li>
-                                    <li>Documenté los endpoints directamente en el código, siguiendo estándares para facilitar la comprensión y mantenimiento del proyecto.</li>
+                                    <h4>Lenguajes de programación:</h4>
+                                    <li>Python: Buenas bases en programación, desarrollo de scripts y aplicaciones.</li>
+                                    <li>JavaScript: Buenas bases en desarrollo web y aplicaciones del lado del cliente.</li>
+                                    <br>
+                                    <h4>Frameworks y Bibliotecas:</h4>
+                                    <li>Angular: Experiencia en desarrollo frontend con Angular, incluyendo el uso de bibliotecas como ng-Zorro y Angular Material.</li>
+                                    <li>Node.js: Experiencia en desarrollo backend con Node.js.</li>
+                                    <li>NestJS: Experiencia en desarrollo backend estructurado y escalable con NestJS.</li>
+                                    <br>
+                                    <h4>Bases de datos:</h4>
+                                    <li>PostgreSQL: Conocimiento en diseño e implementación de bases de datos relacionales.</li>
+                                    <li>SQL: Habilidad para escribir y optimizar consultas SQL.</li>
+                                    <br>
+                                    <h4>Hardware:</h4>
+                                    <li>Conocimiento avanzado de hardware: Profundo entendimiento de componentes y ensamblaje de hardware, incluyendo diagnósticos y soluciones.</li>
+                                    <br>
+                                    <h4>Inteligencia Artificial:</h4>
+                                    <li>Interés y conocimientos básicos en IA: Conocimiento en conceptos y aplicaciones de inteligencia artificial y aprendizaje automático.</li>
+                                    <br>
+                                    <h4>Control de versiones:</h4>
+                                    <li>Git y GitHub: Experiencia en control de versiones y colaboración en proyectos de desarrollo.</li>
+                                    <!-- Añade más habilidades según sea necesario -->
                                 </ul>
                             </div>
-                            <!-- Repite esta estructura para cada trabajo -->
                         </div>
-                    </div>
-                </section>
-
-                <!-- Formación Académica -->
-                <section class="accordion-item">
-                    <h3 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                            Formación Académica
-                        </button>
-                    </h3>
-                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="seducacion">
-                                <p>Fundación de Educación Superior Nueva América - Bogotá D.C</p>
-                                <p>Tecnico de Ingeniería de Sistemas</p>
-                                <p>Febrero 2023 - Agosto 2024</p>
+                    </section>
+                    <section class="accordion-item">
+                        <h3 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                Habilidades Blandas
+                            </button>
+                        </h3>
+                        <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Trabajo en equipo: Capacidad para colaborar efectivamente con colegas y contribuir al éxito del grupo.</li>
+                                    <br>
+                                    <li>Aprendizaje rápido: Facilidad para aprender y aplicar nuevas tecnologías y conocimientos en poco tiempo.</li>
+                                    <br>
+                                    <li>Adaptabilidad: Capacidad para ajustarse rápidamente a nuevas situaciones y cambios en el entorno de trabajo.</li>
+                                    <br>
+                                    <li>Comunicación efectiva: Habilidad para comunicar ideas y conceptos de manera clara y precisa.</li>
+                                    <br>
+                                    <li>Resolución de problemas: Capacidad para identificar problemas y encontrar soluciones efectivas de manera eficiente.</li>
+                                    <br>
+                                    <li>Gestión del tiempo: Habilidad para organizar y priorizar tareas para cumplir con plazos y objetivos</li>
+                                    <!-- Añade más habilidades según sea necesario -->
+                                </ul>
                             </div>
-                            <br>
-                            <div class="seducacion">
-                                <p>Fundación de Educación Superior Nueva América - Bogotá D.C</p>
-                                <p>Tecnologo de Ingeniería de Sistemas</p>
-                                <p>Septiembre 2024 - Actualidad</p>
+                        </div>
+                    </section>
+
+                    <!-- Referencias -->
+                    <section class="accordion-item">
+                        <h3 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                Referencias
+                            </button>
+                        </h3>
+                        <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Luis David De Aguas (Ingeniero en Sistemas)<br>
+                                        Cel: 3045825740</li>
+                                    <li>Brayan Ramirez Angel (Desarrollador de Software)<br>
+                                        Cel: 3204948838</li>
+                                    <li>Brayan Vanegas Orduz (Ingeniero de Software)<br>
+                                        Cel: 3218248617</li>
+                                    <!-- Añade más habilidades según sea necesario -->
+                                </ul>
                             </div>
-                            <br>
-                            <!-- Repite esta estructura para cada educación -->
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Formación Complementaria -->
-                <section class="accordion-item">
-                    <h3 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                            Formación Complementaria
-                        </button>
-                    </h3>
-                    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="seducacion">
-                                <p>Programa de Formación Básica en Lenguaje de Programación Python (Bogotá)</p>
-                                <p>Institución: CoderDojo</p>
-                                <p>Duración: 12 horas</p>
-                                <br><br>
-                                <p>Curso de Dispositivos de Red y Configuración Inicial (Bogotá)</p>
-                                <p>Institución: Cisco</p>
-                                <p>Duración: 48 horas</p>
-                                <br><br>
-                                <p>Curso en AWS (Amazon Web Services)</p>
-                                <p>Institución: Amazon Web Services</p>
-                                <p>Duración: 40 horas</p>
-                                <br><br>
-                                <p>Curso Fundamentos de Python</p>
-                                <p>Institución: Cisco</p>
-                                <p>Duración: 14 horas</p>
-                                <br><br>
-                                <p>Curso Inteligencia Artificial para Negocios (Bogotá)</p>
-                                <p>Institución: MENNTUN GROUP SAS</p>
-                                <p>Duración: 25 horas</p>
-                                <p>Fecha: Del 15 de junio de 2024 al 27 de julio de 2024</p>
-                            </div>
-                            <!-- Repite esta estructura para cada educación -->
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Habilidades -->
-                <section class="accordion-item">
-                    <h3 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                            Habilidades Fuertes
-                        </button>
-                    </h3>
-                    <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <h4>Lenguajes de programación:</h4>
-                                <li>Python: Buenas bases en programación, desarrollo de scripts y aplicaciones.</li>
-                                <li>JavaScript: Buenas bases en desarrollo web y aplicaciones del lado del cliente.</li>
-                                <br>
-                                <h4>Frameworks y Bibliotecas:</h4>
-                                <li>Angular: Experiencia en desarrollo frontend con Angular, incluyendo el uso de bibliotecas como ng-Zorro y Angular Material.</li>
-                                <li>Node.js: Experiencia en desarrollo backend con Node.js.</li>
-                                <li>NestJS: Experiencia en desarrollo backend estructurado y escalable con NestJS.</li>
-                                <br>
-                                <h4>Bases de datos:</h4>
-                                <li>PostgreSQL: Conocimiento en diseño e implementación de bases de datos relacionales.</li>
-                                <li>SQL: Habilidad para escribir y optimizar consultas SQL.</li>
-                                <br>
-                                <h4>Hardware:</h4>
-                                <li>Conocimiento avanzado de hardware: Profundo entendimiento de componentes y ensamblaje de hardware, incluyendo diagnósticos y soluciones.</li>
-                                <br>
-                                <h4>Inteligencia Artificial:</h4>
-                                <li>Interés y conocimientos básicos en IA: Conocimiento en conceptos y aplicaciones de inteligencia artificial y aprendizaje automático.</li>
-                                <br>
-                                <h4>Control de versiones:</h4>
-                                <li>Git y GitHub: Experiencia en control de versiones y colaboración en proyectos de desarrollo.</li>
-                                <!-- Añade más habilidades según sea necesario -->
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="accordion-item">
-                    <h3 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                            Habilidades Blandas
-                        </button>
-                    </h3>
-                    <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Trabajo en equipo: Capacidad para colaborar efectivamente con colegas y contribuir al éxito del grupo.</li>
-                                <br>
-                                <li>Aprendizaje rápido: Facilidad para aprender y aplicar nuevas tecnologías y conocimientos en poco tiempo.</li>
-                                <br>
-                                <li>Adaptabilidad: Capacidad para ajustarse rápidamente a nuevas situaciones y cambios en el entorno de trabajo.</li>
-                                <br>
-                                <li>Comunicación efectiva: Habilidad para comunicar ideas y conceptos de manera clara y precisa.</li>
-                                <br>
-                                <li>Resolución de problemas: Capacidad para identificar problemas y encontrar soluciones efectivas de manera eficiente.</li>
-                                <br>
-                                <li>Gestión del tiempo: Habilidad para organizar y priorizar tareas para cumplir con plazos y objetivos</li>
-                                <!-- Añade más habilidades según sea necesario -->
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Referencias -->
-                <section class="accordion-item">
-                    <h3 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                            Referencias
-                        </button>
-                    </h3>
-                    <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Luis David De Aguas (Ingeniero en Sistemas)<br>
-                                    Cel: 3045825740</li>
-                                <li>Brayan Ramirez Angel (Desarrollador de Software)<br>
-                                    Cel: 3204948838</li>
-                                <li>Brayan Vanegas Orduz (Ingeniero de Software)<br>
-                                    Cel: 3218248617</li>
-                                <!-- Añade más habilidades según sea necesario -->
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-            </div><!-- end accordion -->
-        </main>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+                </div><!-- end accordion -->
+            </main>
+        </div>
+        <script src="/javascript.js"></script>
+    </body>
 </html>
