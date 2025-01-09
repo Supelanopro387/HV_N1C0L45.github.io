@@ -22,6 +22,7 @@ body {
     background: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    width: calc(100% - 40px); /* Ajuste para márgenes en móvil */
 }
 
 /* Button Styles */
@@ -69,6 +70,7 @@ header {
     gap: 30px;
     border-bottom: 3px solid #eaeaea;
     padding-bottom: 30px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en móvil */
 }
 
 .vfotoPerfil {
@@ -147,6 +149,7 @@ section h3 {
     font-weight: 600;
     padding: 20px;
     transition: all 0.3s ease;
+    white-space: normal; /* Permite que el texto se envuelva */
 }
 
 .accordion-button:not(.collapsed) {
@@ -268,4 +271,116 @@ ul li:hover {
 
 .cv-container {
     animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .cv-container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .vfotoPerfil {
+        flex: none;
+    }
+
+    .vfotoPerfil img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .sdatosPersonales {
+        flex: none;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .sdatosPersonales h1 {
+        font-size: 2em;
+    }
+
+    .sdatosPersonales h2 {
+        font-size: 1.3em;
+    }
+
+    .buttons-right {
+        top: 10px;
+        right: 10px;
+    }
+
+    .btn-linkedin, .btn-whatsapp, .btn-dark {
+        width: 40px;
+        height: 40px;
+    }
+
+    .accordion-button {
+        padding: 12px;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    ul li {
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    .justify-text {
+        text-align: left;
+        padding: 10px 0;
+    }
+    
+    /* Ajustes para la sección de educación */
+    .seducacion {
+        padding: 10px 0;
+    }
+    
+    .seducacion p {
+        margin: 5px 0;
+    }
+
+    /* Ajuste para los títulos de secciones */
+    h4 {
+        font-size: 1.1em;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Ajustes específicos para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+    .sdatosPersonales h1 {
+        font-size: 1.8em;
+    }
+
+    .sdatosPersonales h2 {
+        font-size: 1.2em;
+    }
+
+    .vfotoPerfil img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .buttons-right {
+        gap: 5px;
+    }
+
+    .btn-linkedin, .btn-whatsapp, .btn-dark {
+        width: 35px;
+        height: 35px;
+    }
+
+    .accordion-button {
+        font-size: 1em;
+        padding: 10px;
+    }
 }
