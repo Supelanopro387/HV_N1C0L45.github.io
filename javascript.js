@@ -1,6 +1,6 @@
 const toggleButton = document.getElementById('darkModeToggle');
 const body = document.body;
-const accordions = document.querySelectorAll('.accordion, .accordion-header, .accordion-button, .accordion-body'); // Selecciona los acordeones
+const accordions = document.querySelectorAll('.accordion, .accordion-header, .accordion-button, .accordion-body, .summary'); // Selecciona los acordeones
 
 // Verificar si ya hay un modo guardado en localStorage
 if (localStorage.getItem('darkMode') === 'enabled') {
