@@ -277,6 +277,24 @@ ul li:hover {
     animation: fadeIn 0.8s ease-out;
 }
 
+.angular-icon {
+    width: 4%;
+}
+
+.node-icon {
+    width: 4%;
+}
+
+.nest-icon {
+    width: 5%;
+}
+
+.react-icon {
+    background-color: #4D4D4D;
+    border-radius: 50%;
+    width: 5%;
+}
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .cv-container {
@@ -357,6 +375,26 @@ ul li:hover {
         margin-top: 15px;
         margin-bottom: 10px;
     }
+
+    .angular-icon {
+        width: 8%;
+        max-width: 30px;
+    }
+    
+    .node-icon {
+        width: 8%;
+        max-width: 30px;
+    }
+    
+    .nest-icon {
+        width: 10%;
+        max-width: 30px;
+    }
+    
+    .react-icon {
+        width: 10%;
+        max-width: 30px;
+    }
 }
 
 /* Ajustes específicos para pantallas muy pequeñas */
@@ -387,22 +425,20 @@ ul li:hover {
         font-size: 1em;
         padding: 10px;
     }
-}
 
-.angular-icon {
-    width: 4%;
-}
-
-.node-icon {
-    width: 4%;
-}
-
-.nest-icon {
-    width: 5%;
-}
-
-.react-icon {
-    background-color: #4D4D4D;
-    border-radius: 50%;
-    width: 5%;
+    .angular-icon {
+        width: 8%;
+    }
+    
+    .node-icon {
+        width: 8%;
+    }
+    
+    .nest-icon {
+        width: 10%;
+    }
+    
+    .react-icon {
+        width: 10%;
+    }
 }
