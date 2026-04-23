@@ -3,304 +3,497 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hoja de Vida - Nicolas Bolivar</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <meta name="description" content="Hoja de Vida de Nicolás Bolívar - Desarrollador Full Stack en Bogotá, Colombia">
+        <meta name="author" content="Nicolás Bolívar">
+        <meta name="copyright" content="© 2026 Nicolás Bolívar - Todos los derechos reservados">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="index, follow">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'">
+        <meta name="theme-color" content="#2563eb">
+        <title>Nicolas Bolivar | Full Stack Developer</title>
+        <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="./styles/styles.css">
+        <style>
+            /* Anti-inspection overlay - se muestra si detecta DevTools */
+            #security-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                z-index: 99999;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+                font-family: 'Inter', sans-serif;
+            }
+            #security-overlay.active {
+                display: flex;
+            }
+            #security-overlay h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                color: #ef4444;
+            }
+            #security-overlay p {
+                font-size: 1.2rem;
+                color: #cbd5e1;
+                max-width: 500px;
+            }
+            /* Prevenir selección en todo el documento */
+            body {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            /* Solo permitir selección en elementos específicos si es necesario */
+            .selectable {
+                -webkit-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+                user-select: text;
+            }
+        </style>
     </head>
     <body>
-        <div class="buttons-right">
-            <a class="btn-github" href="https://github.com/Supelanopro387" target="_blank">
-                <i class="bi bi-github fs-3 text-white"></i>
-            </a>
-            <a class="btn-linkedin" href="https://www.linkedin.com/in/nicolas-bolivar-a65863344/" target="_blank">
-                <i class="bi bi-linkedin fs-3 text-white"></i>
-            </a>
-            <a class="btn-whatsapp" href="https://wa.me/573222539637?text=Hola%20Nicolas%2C%20estuvimos%20viendo%20tu%20hoja%20de%20vida%20y%20nos%20interesa%20contactarnos%20contigo%20pues%20tienes%20el%20perfil%20de%20lo%20que%20estamos%20buscando" target="_blank">
-                <i class="bi bi-whatsapp fs-3 text-white"></i>
-            </a>
-            <button id="darkModeToggle" class="btn btn-dark fs-3"><i class="bi bi-moon"></i></button>
+        <!-- Security Overlay -->
+        <div id="security-overlay">
+            <div>
+                <h1>🔒 Acceso Restringido</h1>
+                <p>Esta página está protegida contra inspección. Por favor cierra las herramientas de desarrollo para continuar.</p>
+            </div>
         </div>
-        <div class="cv-container">
-            <header>
-                <div class="vfotoPerfil">
-                    <img src="./assets/foto.jpg" alt="Foto de Perfil">
-                </div>
-                <div class="sdatosPersonales">
-                    <h1>Nicolas Felipe Bolivar</h1>
-                    <h2>Ingeniero de Software Full Stack (En formación)</h2>
-                    <p>Email: nicopipebolivar@gmail.com</p>
-                    <p>Teléfono: +57 322 2539637</p>
-                    <p>Dirección: Calle 60 sur #83a-11</p>
-                </div>
-            </header>
-            <main>
-                <section class="summary">
-                    <h3 class="resumen-title">Resumen</h3>
-                    <p class="justify-text">Soy estudiante de octavo semestre de Ingeniería en Sistemas con un gran interés en la computación y la tecnología. Me
-                        apasiona el desarrollo de software, la inteligencia artificial y el hardware. Disfruto resolver problemas a través del código y aprender
-                        nuevas herramientas que me ayuden a mejorar como desarrollador. Me adapto rápido a los cambios, trabajo bien en equipo y siempre estoy
-                        buscando formas de optimizar y mejorar las soluciones tecnológicas.</p>
-                    <p><strong>Objetivo:</strong> Asumir un rol desafiante como Desarrollador de Software Full Stack, aplicando
-                        mis habilidades técnicas y blandas para contribuir al éxito del equipo y aportar soluciones innovadoras.</p>
-                </section>
-                <div class="accordion" id="accordionExample">
 
-                    <!-- Experiencia Laboral -->
-                    <section class="accordion-item">
-                        <h3 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Experiencia Laboral
-                            </button>
-                        </h3>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="sexpLaboral mb-4">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h4>Desarrollador Full Stack (Freelance)</h4>
-                                        <span class="badge bg-success">Actualidad</span>
-                                    </div>
-                                    <p class="text-muted">Proyecto Independiente | Diciembre 2025 - Presente</p>
-                                    <ul>
-                                        <li>Diseño y desarrollo integral de una <strong>aplicación móvil de E-commerce</strong> orientada a la escalabilidad y alta personalizacion.</li>
-                                        <li>Arquitectura del Backend utilizando <strong>Node.js</strong> con una estructura de base de datos relacional en <strong>MySQL</strong>.</li>
-                                        <li>Desarrollo de una interfaz de usuario moderna y fluida mediante <strong>Flutter</strong> para garantizar una experiencia multiplataforma.</li>
-                                        <li>Integración de pasarelas de pago seguras y preparación de la infraestructura para el despliegue en <strong>Google Play Store</strong>.</li>
-                                    </ul>
-                                </div>
+        <!-- Navigation -->
+        <nav class="navbar-nav">
+            <a href="#inicio" class="nav-item active" title="Inicio"><i class="bi bi-house"></i></a>
+            <a href="#about" class="nav-item" title="Sobre mí"><i class="bi bi-person"></i></a>
+            <a href="#experience" class="nav-item" title="Experiencia"><i class="bi bi-briefcase"></i></a>
+            <a href="#projects" class="nav-item" title="Proyectos"><i class="bi bi-code-slash"></i></a>
+            <a href="#skills" class="nav-item" title="Habilidades"><i class="bi bi-lightning"></i></a>
+            <a href="#contact" class="nav-item" title="Contacto"><i class="bi bi-envelope"></i></a>
+        </nav>
 
-                                <hr>
+        <!-- Progress Bar -->
+        <div class="scroll-progress-bar"></div>
 
-                                <div class="sexpLaboral">
-                                    <h4>Desarrollador Junior Full Stack</h4>
-                                    <p class="text-muted">Entelgy SAS | Mayo 2024 - Noviembre 2024</p>
-                                    <ul>
-                                        <li>Lideré el desarrollo desde cero de una <strong>plataforma de Onboarding</strong> técnico, optimizando el proceso de formación de nuevos desarrolladores.</li>
-                                        <li>Implementé módulos de facturación con validación de datos compleja para garantizar la integridad de la información financiera.</li>
-                                        <li>Estandaricé la <strong>documentación de Endpoints (API Rest)</strong>, mejorando la mantenibilidad del código y la colaboración entre equipos.</li>
-                                        <li>Colaboré en el diseño de interfaces intuitivas y funcionales siguiendo los requerimientos técnicos de la compañía.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Proyectos Personales/Servicios -->
-                    <section class="accordion-item">
-                        <h3 class="accordion-header" id="headingProyectos">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProyectos" aria-expanded="true" aria-controls="collapseProyectos">
-                                Proyectos Personales y Servicios
-                            </button>
-                        </h3>
-                        <div id="collapseProyectos" class="accordion-collapse collapse show" aria-labelledby="headingProyectos" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>
-                                        <h5>Chatbot Institucional & Panel Administrativo ✨ (Full Stack)</h5>
-                                        <p><strong>Descripción:</strong> Sistema Full Stack de gestión académica. Desarrollé un bot automatizado para WhatsApp y una plataforma web integral para la administración de usuarios, roles, cursos y notificaciones institucionales.</p>
-                                        <p><strong>Tecnologías:</strong> WhatsApp-web.js, Node.js, Angular, MySQL, OCR (Visión Artificial).</p>
-                                        <p><strong>Logros:</strong> Implementé un sistema multi-rol con memoria contextual y procesamiento de archivos (PDF/Imágenes), centralizando la operación en un dashboard administrativo.</p>
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <h5>QuickServe AI (E-commerce Automation) (Full Stack)</h5>
-                                        <p><strong>Descripción:</strong> Bot de ventas para WhatsApp que automatiza pedidos y facturación en tiempo real. Incluye un sistema de autenticación con JWT y persistencia de datos sincronizada con calendario.</p>
-                                        <p><strong>Tecnologías:</strong> Gemma 3 (LLM), Node.js, Angular, MySQL (Sequelize).</p>
-                                        <p><strong>Logros:</strong> Integración exitosa de IA local mediante prompts configurables para personalizar la atención al cliente.</p>
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <h5>Aleex (Assistant for Learning English Exoticamente) (Full Stack)</h5>
-                                        <p><strong>Descripción:</strong> Aplicación educativa interactiva para el aprendizaje de inglés. Utiliza procesamiento de lenguaje natural y síntesis de voz para facilitar la práctica conversacional en tiempo real.</p>
-                                        <p><strong>Tecnologías:</strong> Python, PyTorch, CUDA, Modelo TTS (CSM), Gemma 3.</p>
-                                        <p><strong>Logros:</strong> Optimización de latencia en la generación de voz y procesamiento de modelos de lenguaje avanzados.</p>
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <h5>Calendario Personal Mejorado (Full Stack)</h5>
-                                        <p><strong>Descripción:</strong> Aplicación de gestión de tiempo y tareas con funcionalidades avanzadas de organización. Permite el control total de cronogramas con una interfaz intuitiva.</p>
-                                        <p><strong>Tecnologías:</strong> Node.js (Express), Angular (NG Zorro), MySQL (Sequelize).</p>
-                                        <p><strong>Logros:</strong> Desarrollo integral de un sistema CRUD robusto con alta eficiencia en la gestión de datos relacionales.</p>
-                                    </li>
-                                </ul>
-                                <br>
-                                <p>📌 Explora el código de mis proyectos públicos en <a href="https://github.com/Supelanopro387" target="_blank">GitHub</a>.</p>
-                                <p><strong>Nota:</strong> Debido a su complejidad técnica, mis proyectos de IA más avanzados se encuentran en repositorios privados. ¡Contáctame para una demostración en vivo! 🚀</p>
-                            </div>
-                        </div>
-                    </section>                   
-
-                    <!-- Formación Académica -->
-                    <section class="accordion-item">
-                        <h3 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                Formación Académica
-                            </button>
-                        </h3>
-                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="seducacion">
-                                    <p>Fundación de Educación Superior Nueva América - Bogotá D.C</p>
-                                    <p>Técnico Profesional en Procesos de Programación de Software</p>
-                                    <p>Febrero 2023 - Agosto 2024</p>
-                                </div>
-                                <br>
-                                <div class="seducacion">
-                                    <p>Fundación de Educación Superior Nueva América - Bogotá D.C</p>
-                                    <p>Tecnólogo en Gestión de Software y Sistemas</p>
-                                    <p>Septiembre 2024 - Octubre 2025</p>
-                                </div>
-                                <br>
-                                <div class="seducacion">
-                                    <p>Fundación de Educación Superior Nueva América - Bogotá D.C</p>
-                                    <p>Ingeniería de Sistemas</p>
-                                    <p>Noviembre 2025 - Actualidad</p>
-                                </div>
-                                <br>
-                                <!-- Repite esta estructura para cada educación -->
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Formación Complementaria -->
-                    <section class="accordion-item">
-                        <h3 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                Formación Complementaria
-                            </button>
-                        </h3>
-                        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="seducacion">
-                                    <p><i class="bi bi-translate fs-3"></i> Curso de Inglés - Nivel A1.</p>
-                                    <p>Institución: Fundación de Educación Superior Nueva América (Bilingües)</p>
-                                    <p>Febrero 2023 - Agosto 2024</p>
-                                    <br>
-                                    <p><i class="bi bi-translate fs-3"></i> Curso de Inglés - Nivel A2.</p>
-                                    <p>Institución: Fundación de Educación Superior Nueva América (Bilingües)</p>
-                                    <p>Septiembre 2024 - Octubre 2025</p>
-                                    <br>
-                                    <p><i class="bi bi-translate fs-3"></i> Curso de Inglés - Nivel B1.</p>
-                                    <p>Institución: Fundación de Educación Superior Nueva América (Bilingües)</p>
-                                    <p>Noviembre 2025 - Actualidad</p>
-                                    <br>
-                                    <p><i class="bi bi-filetype-py fs-3"></i> Programa de Formación Básica en Lenguaje de Programación Python (Bogotá)</p>
-                                    <p>Institución: CoderDojo</p>
-                                    <p>Duración: 12 horas</p>
-                                    <br><br>
-                                    <p><i class="bi bi-router fs-3"></i> Curso de Dispositivos de Red y Configuración Inicial (Bogotá)</p>
-                                    <p>Institución: Cisco</p>
-                                    <p>Duración: 48 horas</p>
-                                    <br><br>
-                                    <p><i class="bi bi-cloud-check fs-3"></i> Curso en AWS (Amazon Web Services)</p>
-                                    <p>Institución: Amazon Web Services</p>
-                                    <p>Duración: 40 horas</p>
-                                    <br><br>
-                                    <p><i class="bi bi-filetype-py fs-3"></i> Curso Fundamentos de Python</p>
-                                    <p>Institución: Cisco</p>
-                                    <p>Duración: 14 horas</p>
-                                    <br><br>
-                                    <p><i class="bi bi-robot fs-3"></i> Curso Inteligencia Artificial para Negocios (Bogotá)</p>
-                                    <p>Institución: MENNTUN GROUP SAS</p>
-                                    <p>Duración: 25 horas</p>
-                                    <p>Fecha: Del 15 de junio de 2024 al 27 de julio de 2024</p>
-                                </div>
-                                <!-- Repite esta estructura para cada educación -->
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Habilidades -->
-                    <section class="accordion-item">
-                        <h3 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                Habilidades Fuertes
-                            </button>
-                        </h3>
-                        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <h4>Lenguajes de programación:</h4>
-                                    <li><i class="bi bi-filetype-py fs-3"></i> Python: Buenas bases en programación, desarrollo de scripts y aplicaciones.</li>
-                                    <li><i class="bi bi-filetype-js fs-3"></i> JavaScript: Buenas bases en desarrollo web y aplicaciones del lado del cliente.</li>
-                                    <br>
-                                    <h4>Frameworks y Bibliotecas:</h4>
-                                    <li><img src="./assets/favicon.ico" class="angular-icon" alt="Angular icon"> Angular: Experiencia en desarrollo frontend con Angular, incluyendo el uso de bibliotecas como ng-Zorro y Angular Material.</li>
-                                    <li><img src="./assets/node.png" class="node-icon" alt="Node icon"> Node.js: Experiencia en desarrollo backend con Node.js.</li>
-                                    <li><img src="./assets/nest.png" class="nest-icon" alt="NestJS icon"> NestJS: Experiencia en desarrollo backend estructurado y escalable con NestJS.</li>
-                                    <li><img src="./assets/react.png" class="react-icon" alt="React icon"> React: Experiencia en desarrollo frontend con React.</li>
-                                    <br>
-                                    <h4>Bases de datos:</h4>
-                                    <li><i class="bi bi-filetype-sql fs-3"></i> PostgreSQL: Conocimiento en diseño e implementación de bases de datos relacionales.</li>
-                                    <li><i class="bi bi-filetype-sql fs-3"></i> SQL: Habilidad para escribir y optimizar consultas SQL.</li>
-                                    <br>
-                                    <h4>Hardware:</h4>
-                                    <li><i class="bi bi-motherboard fs-3"></i> Conocimiento avanzado de hardware: Profundo entendimiento de componentes y ensamblaje de hardware, incluyendo diagnósticos y soluciones.</li>
-                                    <br>
-                                    <h4>Inteligencia Artificial:</h4>
-                                    <li><i class="bi bi-robot fs-3"></i> Interés y conocimientos básicos en IA: Conocimiento en conceptos y aplicaciones de inteligencia artificial y aprendizaje automático.</li>
-                                    <br>
-                                    <h4>Control de versiones:</h4>
-                                    <li><i class="bi bi-git fs-3"></i> Git y GitHub: Experiencia en control de versiones y colaboración en proyectos de desarrollo.</li>
-                                    <!-- Añade más habilidades según sea necesario -->
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="accordion-item">
-                        <h3 class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                Habilidades Blandas
-                            </button>
-                        </h3>
-                        <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>Trabajo en equipo: Capacidad para colaborar efectivamente con colegas y contribuir al éxito del grupo.</li>
-                                    <br>
-                                    <li>Aprendizaje rápido: Facilidad para aprender y aplicar nuevas tecnologías y conocimientos en poco tiempo.</li>
-                                    <br>
-                                    <li>Adaptabilidad: Capacidad para ajustarse rápidamente a nuevas situaciones y cambios en el entorno de trabajo.</li>
-                                    <br>
-                                    <li>Comunicación efectiva: Habilidad para comunicar ideas y conceptos de manera clara y precisa.</li>
-                                    <br>
-                                    <li>Resolución de problemas: Capacidad para identificar problemas y encontrar soluciones efectivas de manera eficiente.</li>
-                                    <br>
-                                    <li>Gestión del tiempo: Habilidad para organizar y priorizar tareas para cumplir con plazos y objetivos</li>
-                                    <!-- Añade más habilidades según sea necesario -->
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Referencias -->
-                    <section class="accordion-item">
-                        <h3 class="accordion-header" id="headingSix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                Referencias
-                            </button>
-                        </h3>
-                        <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><i class="bi bi-person-badge fs-3"></i> Luis David De Aguas - (Ingeniero en Sistemas)<br>
-                                        Cel: 3045825740</li>
-                                    <li><i class="bi bi-person-badge fs-3"></i> Brayan Ramirez Angel - (Ingeniero de Software)<br>
-                                        Cel: 3204948838</li>
-                                    <li><i class="bi bi-person-badge fs-3"></i> Brayan Vanegas Orduz - (Ingeniero de Software)<br>
-                                        Cel: 3218248617</li>
-                                    <!-- Añade más habilidades según sea necesario -->
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                </div><!-- end accordion -->
-            </main>
+        <!-- Social Buttons -->
+        <div class="social-buttons">
+            <a class="social-btn github" href="https://github.com/Supelanopro387" target="_blank" title="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+            <a class="social-btn linkedin" href="https://www.linkedin.com/in/nicolas-bolivar-a65863344/" target="_blank" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a class="social-btn whatsapp" href="https://wa.me/573222539637?text=Hola%20Nicolas" target="_blank" title="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <button id="darkModeToggle" class="social-btn theme" title="Cambiar tema">
+                <i class="bi bi-moon"></i>
+            </button>
         </div>
+
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-bg-animation"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-glow"></div>
+                        <img src="./assets/foto.jpg" alt="Nicolas Bolivar" class="hero-image">
+                    </div>
+                    <div class="hero-text">
+                        <span class="hero-greeting">¡Hola! Soy</span>
+                        <h1 class="hero-title">Nicolás Bolívar</h1>
+                        <div class="hero-subtitle-wrapper">
+                            <span class="hero-subtitle">Desarrollador </span>
+                            <span class="typing-text"></span>
+                        </div>
+                        <p class="hero-description">
+                            Estudiante de <strong>9no semestre</strong> apasionado por crear soluciones tecnológicas
+                            que combinan código limpio, arquitectura escalable e inteligencia artificial.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn-primary">Ver Proyectos</a>
+                            <a href="#contact" class="btn-secondary">Contáctame</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <div class="section-container reveal">
+                    <h2 class="section-title">
+                        <i class="bi bi-person-circle"></i> Sobre Mí
+                    </h2>
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <div class="about-icon"><i class="bi bi-code-slash"></i></div>
+                            <h3>Lo que hago</h3>
+                            <p>Transformo ideas en productos digitales funcionales. Me especializo en desarrollo Full Stack
+                            con foco en experiencias web modernas y aplicaciones escalables.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-icon"><i class="bi bi-rocket"></i></div>
+                            <h3>Mi enfoque</h3>
+                            <p>Código limpio + arquitectura sólida + aprendizaje continuo. Creo que la mejor solución
+                            es la que equilibra simplicidad, rendimiento y mantenibilidad.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                            <h3>Mi objetivo</h3>
+                            <p>Unirme a un equipo donde pueda crecer técnicamente mientras contribuyo con soluciones
+                            que generen impacto real en el producto y los usuarios.</p>
+                        </div>
+                    </div>
+                    <div class="info-chips">
+                        <span class="chip"><i class="bi bi-geo-alt"></i> Bogotá, Colombia</span>
+                        <span class="chip"><i class="bi bi-envelope"></i> nicopipebolivar@gmail.com</span>
+                        <span class="chip"><i class="bi bi-phone"></i> +57 322 2539637</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="content-section">
+                <div class="section-container reveal">
+                    <h2 class="section-title">
+                        <i class="bi bi-briefcase"></i> Experiencia
+                    </h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Desarrollador Full Stack <span class="badge-freelance">Freelance</span></h3>
+                                    <span class="timeline-date">Dic 2025 - Presente</span>
+                                </div>
+                                <p class="timeline-company">Proyecto Independiente</p>
+                                <ul class="timeline-list">
+                                    <li>E-commerce móvil multiplataforma con Flutter + Node.js/MySQL</li>
+                                    <li>Integración de pasarelas de pago y preparación para Google Play</li>
+                                    <li>Arquitectura escalable desde cero</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Desarrollador Junior Full Stack</h3>
+                                    <span class="timeline-date">May 2024 - Nov 2024</span>
+                                </div>
+                                <p class="timeline-company">Entelgy SAS</p>
+                                <ul class="timeline-list">
+                                    <li>Plataforma de Onboarding técnico desde cero</li>
+                                    <li>Módulos de facturación con validación compleja</li>
+                                    <li>Documentación y estandarización de APIs REST</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <div class="section-container reveal">
+                    <h2 class="section-title">
+                        <i class="bi bi-folder2-open"></i> Proyectos
+                    </h2>
+                    <p class="section-intro">Algunos de los proyectos que he construido:</p>
+
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon"><i class="bi bi-chat-dots"></i></div>
+                                <span class="project-badge">Full Stack</span>
+                            </div>
+                            <h3>Chatbot Institucional + Panel Admin</h3>
+                            <p>Bot automatizado para WhatsApp con panel web de gestión académica. Multi-rol, memoria contextual y OCR.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">OCR</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon"><i class="bi bi-cart"></i></div>
+                                <span class="project-badge">Full Stack + AI</span>
+                            </div>
+                            <h3>QuickServe AI - E-commerce</h3>
+                            <p>Bot de ventas para WhatsApp con facturación en tiempo real. Autenticación JWT y sincronización con calendario.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Qwen 3 VL</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon"><i class="bi bi-translate"></i></div>
+                                <span class="project-badge">AI / ML</span>
+                            </div>
+                            <h3>Aleex - English Learning</h3>
+                            <p>App educativa con NLP y síntesis de voz para práctica conversacional en tiempo real.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">PyTorch</span>
+                                <span class="tech-badge">CUDA</span>
+                                <span class="tech-badge">TTS</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon"><i class="bi bi-calendar-check"></i></div>
+                                <span class="project-badge">Full Stack</span>
+                            </div>
+                            <h3>Calendario Personal Pro</h3>
+                            <p>Gestión avanzada de tiempo y tareas con CRUD robusto e interfaz intuitiva.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">NG Zorro</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-footer">
+                        <p class="projects-note">
+                            <i class="bi bi-github"></i>
+                            <a href="https://github.com/Supelanopro387" target="_blank">Explora más en GitHub</a>
+                        </p>
+                        <p class="projects-private">
+                            <i class="bi bi-lock"></i>
+                            Proyectos de IA avanzados en repositorios privados. ¡Contáctame para una demo!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="content-section">
+                <div class="section-container reveal">
+                    <h2 class="section-title">
+                        <i class="bi bi-lightning-fill"></i> Habilidades
+                    </h2>
+
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3><i class="bi bi-code-square"></i> Tech Stack</h3>
+                            <div class="skills-visual">
+                                <div class="skill-item">
+                                    <img src="./assets/react.png" alt="React" class="skill-logo">
+                                    <span>React</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="./assets/favicon.ico" alt="Angular" class="skill-logo">
+                                    <span>Angular</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="./assets/node.png" alt="Node.js" class="skill-logo">
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="./assets/nest.png" alt="NestJS" class="skill-logo">
+                                    <span>NestJS</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="bi bi-filetype-py skill-icon-generic"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="bi bi-filetype-js skill-icon-generic"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3><i class="bi bi-database"></i> Datos</h3>
+                            <div class="skills-visual">
+                                <div class="skill-item">
+                                    <i class="bi bi-database skill-icon-generic"></i>
+                                    <span>SQL</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="bi bi-filetype-sql skill-icon-generic"></i>
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="bi bi-filetype-sql skill-icon-generic"></i>
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="bi bi-git skill-icon-generic"></i>
+                                    <span>Git / GitHub</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3><i class="bi bi-cpu"></i> Especialidades</h3>
+                            <div class="skills-visual">
+                                <div class="skill-item">
+                                    <i class="bi bi-robot skill-icon-generic"></i>
+                                    <span>IA / ML</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="bi bi-motherboard skill-icon-generic"></i>
+                                    <span>Hardware</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soft-skills">
+                        <h3><i class="bi bi-people"></i> Habilidades Blandas</h3>
+                        <div class="soft-skills-grid">
+                            <span class="soft-skill-tag">Trabajo en equipo</span>
+                            <span class="soft-skill-tag">Aprendizaje rápido</span>
+                            <span class="soft-skill-tag">Adaptabilidad</span>
+                            <span class="soft-skill-tag">Comunicación</span>
+                            <span class="soft-skill-tag">Resolución de problemas</span>
+                            <span class="soft-skill-tag">Gestión del tiempo</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="content-section">
+                <div class="section-container reveal">
+                    <h2 class="section-title">
+                        <i class="bi bi-mortarboard"></i> Formación
+                    </h2>
+
+                    <div class="education-timeline">
+                        <div class="edu-item">
+                            <div class="edu-icon"><i class="bi bi-patch-check"></i></div>
+                            <div class="edu-content">
+                                <h4>Ingeniería de Sistemas</h4>
+                                <p>Fundación de Educación Superior Nueva América</p>
+                                <span class="edu-period">Nov 2025 - Presente (9no semestre)</span>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-icon"><i class="bi bi-patch-check"></i></div>
+                            <div class="edu-content">
+                                <h4>Tecnólogo en Gestión de Software</h4>
+                                <p>Fundación de Educación Superior Nueva América</p>
+                                <span class="edu-period">Sep 2024 - Oct 2025</span>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-icon"><i class="bi bi-patch-check"></i></div>
+                            <div class="edu-content">
+                                <h4>Técnico en Programación</h4>
+                                <p>Fundación de Educación Superior Nueva América</p>
+                                <span class="edu-period">Feb 2023 - Ago 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <details class="certifications-details">
+                        <summary><i class="bi bi-award"></i> Certificaciones y Cursos</summary>
+                        <div class="certifications-grid">
+                            <div class="cert-item">
+                                <i class="bi bi-translate"></i>
+                                <div>
+                                    <strong>Inglés B1</strong>
+                                    <p>FESNA - Actualidad</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <i class="bi bi-cloud-check"></i>
+                                <div>
+                                    <strong>AWS Cloud</strong>
+                                    <p>Amazon - 40h</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <i class="bi bi-robot"></i>
+                                <div>
+                                    <strong>IA para Negocios</strong>
+                                    <p>MENNTUN - 25h</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <i class="bi bi-filetype-py"></i>
+                                <div>
+                                    <strong>Python Fundamentals</strong>
+                                    <p>Cisco - 14h</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <i class="bi bi-router"></i>
+                                <div>
+                                    <strong>Redes y Configuración</strong>
+                                    <p>Cisco - 48h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <div class="section-container reveal">
+                    <h2 class="section-title">
+                        <i class="bi bi-envelope-heart"></i> Contacto
+                    </h2>
+                    <div class="contact-content">
+                        <p class="contact-intro">
+                            ¿Tienes una oportunidad interesante o quieres colaborar en algo?
+                            <strong>¡Me encantaría escucharte!</strong>
+                        </p>
+                        <div class="contact-actions">
+                            <a href="mailto:nicopipebolivar@gmail.com" class="contact-btn primary">
+                                <i class="bi bi-envelope"></i> Enviar Email
+                            </a>
+                            <a href="https://wa.me/573222539637" target="_blank" class="contact-btn whatsapp">
+                                <i class="bi bi-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://linkedin.com/in/nicolas-bolivar-a65863344/" target="_blank" class="contact-btn linkedin">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="cv-footer">
+            <p>Hecho con <i class="bi bi-heart-fill"></i> y mucho café ☕</p>
+            <p class="footer-year">© 2026 Nicolás Bolívar</p>
+        </footer>
+
         <script src="./js/javascript.js"></script>
     </body>
 </html>
